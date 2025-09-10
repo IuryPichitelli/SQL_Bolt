@@ -1,16 +1,16 @@
 
-***************** SELECT ************************
+************************************************** SELECT ****************************************************
 Para consultarmos um coluna ou mais de uma table usamos os seguintes comandos:
 
 select (nome da coluna) from (nome da tabela)
 select * from nome_tabela = * seleciona todas as colunas da tabela
 
-***************** WHERE *************************
+**************************************************** WHERE ***************************************************
 Para filtrar alguns resultas usamos o WHERE com a sua condição
 
 SELECT coluna_01, coluna_02 FROM nome_tabela WHERE condição AND/OR column AND/OR ....
-
---------------------------------------------------------------------------------------------------------------
+ 
+--------------------------------------- OPERADORES RELACIONAL ------------------------------------------------
 =, !=, <, <=, >, >=      Standard numerical operators	                        col_name != 4
 --------------------------------------------------------------------------------------------------------------
 BETWEEN ... AND	         Number is within range of two values (inclusive)       col_name BETWEEN 1.5 AND 10.5
@@ -24,4 +24,8 @@ NOT IN (…)	             Number does not exist in a list	                    co
 
 Exemplos:
 
-SELECT * FROM nomeTabela WHERE colunaAno > 2010
+SELECT * (todas colunas) FROM nomeTabela WHERE colunaAno <= 5 (0, 1, 2, 3, 4, 5)
+SELECT * (todas colunas) FROM nomeTabela WHERE colunaIdade BETWEEN 3 AND 5 (3, 4, 5)
+SELECT * (todas colunas) FROM nomeTabela WHERE colunaIdade NOT BETWEEN 1 AND 5 (6, 7, 8, 9 ....)
+SELECT * (todas colunas) FROM nomeTabela WHERE colunaIdade IN (12,15,18) (12,12,15,15,15,18)
+

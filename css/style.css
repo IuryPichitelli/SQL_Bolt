@@ -11,6 +11,7 @@
     --cor-text:#f5f5f5;
     --font-text: arial, verdana, helvetica, sans-serif;
     --font-title: arial, verdana, helvetica, sans-serif;
+    --border-default: 1px solid gray;
 }
 
 /* default tags*/
@@ -26,7 +27,7 @@ header{
     color: var(--cor-text);
     background-color: var(--cor-header-footer);
     height: 80px;
-    border: 1px solid gray;
+    border: var(--border-default);
     width: 100%;
 }
 
@@ -53,7 +54,7 @@ main{
     background-color: var(--cor-secondary);
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: var(--border-default);
 }
 
 
@@ -89,10 +90,42 @@ article ul li{
 }
 
 .containerTemas{
-    border: 1px solid gray;
+    border: var(--border-default);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+table{
+    border: var(--border-default);
+    width: 100%;
+    color: var(--cor-text);
+    font-family: var(--font-text);
+    text-align: center;
+    border-collapse: collapse;
+    margin: 20px 0px;
+}
+
+table caption{
+    background-color: var(--cor-header-footer);
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 0px;
+    border-top: var(--border-default);
+    border-left: var(--border-default);
+    border-right: var(--border-default);
+}
+
+table th, tr, td{
+    border: var(--border-default);
+    width: max-content;
+}
+
+table td, th{
+    padding: 5px 5px;
+}
+
+table th{
+    background-color: var(--cor-header-footer);
 }
 
 footer{

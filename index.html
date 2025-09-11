@@ -26,6 +26,50 @@
             <div class="containerTemas">
                 <h2>CONSULTAS COM RESTRIÇÕES PART 01</h2>
                 <h3>WHERE</h3>
+                <p>Para filtrar alguns resultas usamos o WHERE com a sua condição</p>
+                <ul>
+                    <li>
+                        SELECT coluna_01, coluna_02 FROM nome_tabela WHERE condição AND/OR column AND/OR ....
+                    </li>
+                </ul>
+                <table>
+                    <caption>OPERADORES RELACIONAIS</caption>
+                   
+                    <tr>
+                        <th>OPERADOR</th>
+                        <th>CONDIÇÃO</th>
+                        <th>SQL EXEMPLO</th>
+                    </tr>
+                    <tr>
+                        <td>=, !=, <, <=, >, >=</td>
+                        <td>Operadores numéricos padrão</td>
+                        <td>nome_coluna != 4</td>
+                    </tr>
+
+                    <tr>
+                        <td>BETWEEN ... AND	</td>
+                        <td>O número está dentro do intervalo de dois valores (inclusive)</td>
+                        <td>col_name BETWEEN 1.5 AND 10.5</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>NOT BETWEEN … AND</td>
+                        <td>O número não está dentro do intervalo de dois valores (inclusive)</td>
+                        <td>col_name NOT BETWEEN 1 AND 10</td>
+                    </tr>
+
+                    <tr>
+                        <td>IN (…)</td>
+                        <td>O número existe em uma lista</td>
+                        <td>col_name IN (2, 4, 6)</td>
+                    </tr>           
+                    
+                    <tr>
+                        <td>NOT IN (…)</td>
+                        <td>O número não existe em uma lista</td>
+                        <td>col_name NOT IN (1, 3, 5)</td>
+                    </tr>
+                </table>
             </div>
         </article>
     </main>

@@ -5,7 +5,7 @@
 }
 
 :root{
-    --cor-primary:#383838;
+    --cor-primary:#2e2e2e;
     --cor-secondary:#1f1f1f;
     --cor-header-footer:#2074E7;
     --cor-text:#f5f5f5;
@@ -94,6 +94,23 @@ article ul li ul li{
     padding-left: 10px;
 }
 
+article p.exemplos{
+    background-color: var(--cor-text);
+    color: var(--cor-secondary);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.imageInsideArticle{
+    border: var(--border-default);
+    border-radius: 10px;
+    display: block;
+    margin: 10px 0px 20px 20px;
+}
+
 .containerTemas{
     border: var(--border-default);
     padding: 20px;
@@ -136,7 +153,7 @@ table th{
 footer{
     background-color: var(--cor-header-footer);
     color: var(--cor-text);
-    position: absolute;
+    position: relative;
     bottom: 0;
     height: 50px;
     width: 100%;

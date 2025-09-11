@@ -19,6 +19,7 @@ p{
     color: var(--cor-text);
     font-family: var(--font-text);
     text-align: justify;
+    margin-top: 10px;
 }
 
 header{
@@ -53,6 +54,45 @@ main{
     padding: 20px;
     border-radius: 10px;
     border: 1px solid gray;
+}
+
+
+article h2{
+    text-align: left;
+    color: var(--cor-text);
+    font-family: var(--font-text);
+    border-left: 8px solid var(--cor-header-footer);
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+article h3{
+    text-align: left;
+    color: var(--cor-text);
+    font-family: var(--font-text);
+    padding: 3px 10px;
+    margin-bottom: 20px;
+    background-color: var(--cor-header-footer);
+    display: inline;
+    border-radius: 10px;
+}
+
+article ul{
+    list-style-position: inside;
+    margin:10px;
+}
+
+article ul li{
+    color: var(--cor-text);
+    font-family: var(--font-text);
+    margin-top: 5px;
+}
+
+.containerTemas{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 footer{

@@ -89,6 +89,11 @@ article ul li{
     margin-top: 5px;
 }
 
+article ul li ul li{
+    list-style: none;
+    padding-left: 10px;
+}
+
 .containerTemas{
     border: var(--border-default);
     padding: 20px;

@@ -23,6 +23,10 @@ p{
     margin-top: 10px;
 }
 
+hr{
+    margin: 20px 0px;
+}
+
 header{
     color: var(--cor-text);
     background-color: var(--cor-header-footer);
@@ -72,7 +76,7 @@ article h3{
     color: var(--cor-text);
     font-family: var(--font-text);
     padding: 3px 10px;
-    margin-bottom: 20px;
+    margin: 20px 0px;
     background-color: var(--cor-header-footer);
     display: inline;
     border-radius: 10px;

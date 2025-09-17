@@ -1,0 +1,140 @@
+drop database cadastro; "deleta o banco de dados".
+drop table cursos;"deleta a tabela"
+create database cadastro; "cria o banco de dados".
+
+use cadastro;
+create table pessoas (
+nome varchar(30),
+idade tinyint(3),
+sexo char(1),
+peso float,
+altura float,
+nacionalidade varchar(20)
+);
+
+describe pessoas;
+___________________________________________________________________
+
+create database cadastro
+default character set utf8
+default collate utf8_general_ci;
+
+create table `pessoas` (
+`id` int not null auto_increment,
+`nome` varchar (30) not null,
+`nascimento` date,
+`sexo` enum('M', 'F'),
+`peso` decimal(5,2),
+`altura` decimal(3,2),
+`nacionalidade` varchar(20) default 'Brasil',
+primary key (id)
+)default charset = utf8;
+_____________________________________________________________________
+
+alter table pessoas
+add column profissao varchar(10);
+_____________________________________________________________________
+
+LITERAL  = CARACTERE *  varchar = "
+                     *  char ="
+text = textos longos
+year = colocar somente o ano
+
+-not null = obriga o usuario a preencher os dados
+
+-decimal (5,2): 5 e o numero total, e o 2 o numeros depois da virgula
+
+-nacionalidade varchar(20) default 'Brasil' = na nacionalidade por 
+padrão se ninguem digitar a nacionalidade sera brasil
+
+-id int not null auto_increment = define como chave primaria numeros 
+inteiros,definida como id, primary key(id), define a chave id como 
+primaria.
+
+-nome varchar(30) not null unique, = define que o nome do curso não
+pode se repetir
+
+-carga int unsigned, = não deixa ser negativo o valor, economiza um
+byte
+
+-ano year default '2016' = se o ano não for colocado sera colocado 2016
+
+-create table/database = DDL(DATA DEFINITION LANGUAGE)
+insert into = DML(DATA MANIPULATION LANGUAGE)
+
+- create table if not exists gafanhotos(teste int);=
+vai criar uma tabela se a gafanhotos não existir
+
+-alter table = altera a estrutura da tambem
+add column = adiciona na coluna(campo) 
+
+-alter table pessoas
+drop column profissao;= exclui objeto dentro da coluna
+
+-alter table pessoas
+add column profissao varchar(10) after nome;= coloca a coluna depois
+nome.
+
+-alter table pessoas
+add column codigo int first;= adiciona na primeira coluna
+
+alter table cursos
+add primary key(idcursos);= adiciona essa columa como a primeira coluna
+chave
+
+-alter table pessoas
+modify column profissao varchar(20);= modifica a estrutura da função
+de (10) para (20)
+
+tambem pode modificar colocando
+modify column profissao varchar(20) not null default'';
+= os campos aonde fica a profissão fica vazio
+
+-alter table pessoas
+change column profissao prof varchar(20) not null default '';
+= modifica o nome da variavel
+
+alter table pessoas
+rename to people;
+=altera o nome da tabela
+
+update cursos
+set nome = 'html5' 
+where idcursos = '3'; altera o dado da coluna que foi armazenada .
+
+update cursos
+set nome = 'PHP', ano = '2015'
+where idcursos = '4'; altera dois dados errados na mesma linha
+
+update cursos
+set nome = 'PHP', ano = '2015'
+where idcursos = '4'
+limit 1; = o limite, limita a quantidade de linhas alteradas pelo 
+comando caso erre.
+_____________________________________________________________________
+
+PARAMETROS (definição dos caracteres)
+
+default character set utf8 (padrão br)
+default collate utf8_general_ci;
+
+insert into pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+values
+(default, 'iury','2001-10-11','M','60.0','1.83',default);
+
+select * from pessoas;
+
+________________________________________________________________________
+
+ordem de procedencia
+
+Banco de dados
+tabelas
+campos (colunas)
+registro (linha, tupla)
+
+
+
+
+

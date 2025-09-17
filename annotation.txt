@@ -38,3 +38,9 @@ OPERADORES	   CONDIÇÃO	            EXEMPLO                EXPLICAÇÃO
 != ou <>	   Diferença (não igual)	coluna <> "abcd"	Retorna todas as linhas onde a coluna é diferente de "abcd".
 LIKE	       Comparação de texto com curingas (% e _)	/ coluna LIKE "ABC"	Retorna valores que batem com o padrão informado. Pode ser sensível ou não a maiúsculas, dependendo do banco.
 NOT LIKE	   Negação do LIKE / coluna NOT LIKE "ABCD"	Retorna os valores que não batem com o padrão.
+
+database
+https://www.oracle.com/br/database/technologies/xe-downloads.html
+
+sqldeveloper:
+https://www.oracle.com/database/sqldeveloper/technologies/download/

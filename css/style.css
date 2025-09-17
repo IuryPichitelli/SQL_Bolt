@@ -100,7 +100,9 @@ article h1{
     text-align: center;
     font-family: var(--font-title);
     color: var(--cor-text);
-    margin: 20px 0px;
+    margin: 0px 0px 20px 0px;
+    background-color: var(--cor-third);
+    border-radius: 10px;
 }
 
 article h2{

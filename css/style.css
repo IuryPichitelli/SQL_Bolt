@@ -7,7 +7,8 @@
 :root{
     --cor-primary:#2e2e2e;
     --cor-secondary:#1f1f1f;
-    --cor-header-footer:#2074E7;
+    --cor-third:#2074E7;
+    --cor-fourth:#3180ee;
     --cor-text:#f5f5f5;
     --font-text: arial, verdana, helvetica, sans-serif;
     --font-title: arial, verdana, helvetica, sans-serif;
@@ -29,7 +30,7 @@ hr{
 
 header{
     color: var(--cor-text);
-    background-color: var(--cor-header-footer);
+    background-color: var(--cor-third);
     height: 80px;
     border: var(--border-default);
     width: 100%;
@@ -47,6 +48,33 @@ header img{
     top: 12px;
 }
 
+nav{
+    background-color: var(--cor-third);
+    align-items: center;
+    justify-content: left;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    font-family: var(--font-text);
+    color: var(--cor-text);
+    padding: 5px 10px;
+    transition: background-color .3s ease;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: var(--cor-fourth);
+}
+
 body{
     background-color: var(--cor-primary);
     height: 100vh;
@@ -59,6 +87,7 @@ main{
     padding: 20px;
     border-radius: 10px;
     border: var(--border-default);
+    animation: fadeIn .7s ease-in-out;
 }
 
 
@@ -66,7 +95,7 @@ article h2{
     text-align: left;
     color: var(--cor-text);
     font-family: var(--font-text);
-    border-left: 8px solid var(--cor-header-footer);
+    border-left: 8px solid var(--cor-third);
     padding-left: 10px;
     margin-bottom: 20px;
 }
@@ -77,7 +106,7 @@ article h3{
     font-family: var(--font-text);
     padding: 3px 10px;
     margin: 20px 0px;
-    background-color: var(--cor-header-footer);
+    background-color: var(--cor-third);
     display: inline;
     border-radius: 10px;
 }
@@ -133,7 +162,7 @@ table{
 }
 
 table caption{
-    background-color: var(--cor-header-footer);
+    background-color: var(--cor-third);
     border-radius: 5px 5px 0px 0px;
     padding: 5px 0px;
     border-top: var(--border-default);
@@ -151,11 +180,11 @@ table td, th{
 }
 
 table th{
-    background-color: var(--cor-header-footer);
+    background-color: var(--cor-third);
 }
 
 footer{
-    background-color: var(--cor-header-footer);
+    background-color: var(--cor-third);
     color: var(--cor-text);
     position: relative;
     bottom: 0;
@@ -166,4 +195,9 @@ footer{
 footer p{
     text-align: center;
     padding: 10px;
+}
+
+@keyframes fadeIn{
+    from { opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
 }

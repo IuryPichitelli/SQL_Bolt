@@ -96,6 +96,12 @@ main{
     flex: 1;
 }
 
+article h1{
+    text-align: center;
+    font-family: var(--font-title);
+    color: var(--cor-text);
+    margin: 20px 0px;
+}
 
 article h2{
     text-align: left;
